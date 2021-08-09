@@ -63,7 +63,7 @@ namespace Fleury.Determine.Text
         /// <param name="exception">exception for throwing</param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static string Throw(this Condition<bool, string> origin, Exception exception)
+        public static Condition<string, string> Throw(this Condition<bool, string> origin, Exception exception)
         {
             if (origin.Value)
                 throw exception;
