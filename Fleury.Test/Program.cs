@@ -8,7 +8,7 @@ namespace Fleury.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!".Is().Empty().Value);
+            Console.WriteLine("".ThrowIf(s => s.IsEmpty(), new Exception("Test")));
         }
     }
 }

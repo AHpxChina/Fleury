@@ -1,4 +1,5 @@
-﻿using Fleury.Data.Determine;
+﻿using System;
+using Fleury.Data.Determine;
 
 namespace Fleury.Determine
 {
