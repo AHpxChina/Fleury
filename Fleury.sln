@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleury", "Fleury\Fleury.csproj", "{9E4F02EB-5A34-4EDC-B87F-CF8D9A1B0E9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleury.Test", "Fleury.Test\Fleury.Test.csproj", "{B4C89B60-AFF5-48FF-8597-51AD589863ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleury.UnitTest", "Fleury.UnitTest\Fleury.UnitTest.csproj", "{49193427-5334-4208-A338-FE1DA7680232}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E4F02EB-5A34-4EDC-B87F-CF8D9A1B0E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4F02EB-5A34-4EDC-B87F-CF8D9A1B0E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4F02EB-5A34-4EDC-B87F-CF8D9A1B0E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4F02EB-5A34-4EDC-B87F-CF8D9A1B0E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C89B60-AFF5-48FF-8597-51AD589863ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C89B60-AFF5-48FF-8597-51AD589863ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C89B60-AFF5-48FF-8597-51AD589863ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C89B60-AFF5-48FF-8597-51AD589863ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49193427-5334-4208-A338-FE1DA7680232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49193427-5334-4208-A338-FE1DA7680232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49193427-5334-4208-A338-FE1DA7680232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49193427-5334-4208-A338-FE1DA7680232}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
