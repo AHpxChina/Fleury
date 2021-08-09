@@ -1,4 +1,6 @@
 ﻿using System;
+using Fleury.Determine;
+using Fleury.Determine.Text;
 
 namespace Fleury.Test
 {
@@ -6,7 +8,7 @@ namespace Fleury.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!".Is().Empty().Value);
         }
     }
 }

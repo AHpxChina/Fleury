@@ -4,19 +4,8 @@
     <projectFile>Fleury.Test/Fleury.Test.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c068cdf-9126-4dac-9213-e563be1261e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fleury.Test/Fleury.Test.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fleury.Test/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fleury.UnitTest/Fleury.UnitTest.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fleury.UnitTest/UnitTest1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fleury.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fleury/Fleury.csproj" afterDir="false" />
+    <list default="true" id="1c068cdf-9126-4dac-9213-e563be1261e5" name="Default Changelist" comment="Add StringWrapper.cs and corresponding unit tests">
+      <change afterPath="$PROJECT_DIR$/Fleury/Determine/Text/StringExtensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +17,15 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fleury.Test/Program.cs" />
       <option value="$PROJECT_DIR$/Fleury.UnitTest/UnitTest1.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Text.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Text/StringExtensions.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Determine/ConditionWrapper.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Data/Determine/Condition.cs" />
+      <option value="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" />
+      <option value="$PROJECT_DIR$/Fleury.Test/Program.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Determine/Text/StringWrapper.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Determine/Text/StringExtensions.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUXlzM3Hjj99pmFV1zI7dTT9fa" />
@@ -42,6 +38,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35020804" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -49,10 +47,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Fleury.Test">
     <configuration name="Fleury.Test" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -81,13 +79,36 @@
       <option name="presentableId" value="Default" />
       <updated>1628514298692</updated>
       <workItem from="1628514305576" duration="888000" />
+      <workItem from="1628516198384" duration="5140000" />
     </task>
+    <task id="LOCAL-00001" summary="Initialized">
+      <created>1628516228240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628516228240</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add StringWrapper.cs">
+      <created>1628521007037</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628521007037</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add StringWrapper.cs and corresponding unit tests">
+      <created>1628521064499</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628521064499</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -99,9 +120,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initialized" />
+    <MESSAGE value="Add StringWrapper.cs" />
+    <MESSAGE value="Add StringWrapper.cs and corresponding unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add StringWrapper.cs and corresponding unit tests" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
