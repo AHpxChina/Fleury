@@ -8,12 +8,7 @@ namespace Fleury.Test
     {
         static void Main(string[] args)
         {
-            //scenario
-            var txt = "".Is()
-                .Empty()
-                .Throw(new Exception("Invalid value"));
-
-            Console.WriteLine(txt);
+            Console.WriteLine(" ".IsEmptyOrThrow());
         }
     }
 }
