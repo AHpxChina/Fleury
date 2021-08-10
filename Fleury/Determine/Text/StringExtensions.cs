@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 
 namespace Fleury.Determine.Text
 {
@@ -94,6 +95,23 @@ namespace Fleury.Determine.Text
         }
 
         /// <summary>
+        /// Determine if a string is int or throw exception
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="exception">Exception for throwing</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static int IsIntOrThrow(this string source, Exception exception = null)
+        {
+            exception ??= new Exception($"Not a valid int: {source}");
+
+            if (!source.IsInt(out var re))
+                throw exception;
+
+            return re;
+        }
+
+        /// <summary>
         /// Determine if a string is long
         /// </summary>
         /// <param name="source"></param>
@@ -113,6 +131,23 @@ namespace Fleury.Determine.Text
         {
             return long.TryParse(source, out output);
         }
+        
+        /// <summary>
+        /// Determine if a string is long or throw exception
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="exception">Exception for throwing</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static long IsLongOrThrow(this string source, Exception exception = null)
+        {
+            exception ??= new Exception($"Not a valid long: {source}");
+
+            if (!source.IsLong(out var re))
+                throw exception;
+
+            return re;
+        }
 
         /// <summary>
         /// Determine if a string is integer char-by-char, no size limited
@@ -125,6 +160,23 @@ namespace Fleury.Determine.Text
                 source = source.TrimStart('-');
             
             return source.ToCharArray().All(char.IsNumber);
+        }
+
+        /// <summary>
+        /// Determine if a string is integer or throw exception
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="exception">Exception for throwing</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static string IsIntegerOrThrow(this string source, Exception exception = null)
+        {
+            exception ??= new Exception($"Not a valid integer: {source}");
+
+            if (!source.IsInteger())
+                throw exception;
+
+            return source;
         }
 
         #endregion
@@ -156,6 +208,84 @@ namespace Fleury.Determine.Text
             return source.Replace(target, string.Empty);
         }
 
+        #endregion
+
+        #region IP check
+
+        /// <summary>
+        /// Determine if a string is valid ipv4 or ipv6 address
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static bool IsIpAddress(this string source)
+        {
+            return IPAddress.TryParse(source, out _);
+        }
+
+        /// <summary>
+        /// Determine if a string is valid ipv4 or ipv6 address
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="ipAddress">Out parameter</param>
+        /// <returns></returns>
+        public static bool IsIpAddress(this string source, out IPAddress ipAddress)
+        {
+            return IPAddress.TryParse(source, out ipAddress);
+        }
+        
+        /// <summary>
+        /// Determine if a string is ip address or throw exception
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="exception">Exception for throwing</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static IPAddress IsIpAddressOrThrow(this string source, Exception exception = null)
+        {
+            exception ??= new Exception($"Not a valid ip address: {source}");
+
+            if (!source.IsIpAddress(out var re))
+                throw exception;
+
+            return re;
+        }
+
+        /// <summary>
+        /// Determine a string is valid host
+        /// <example>localhost:8080 will be true</example>
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static bool IsHost(this string source)
+        {
+            var split = source.Split(":");
+
+            if (split.Length != 2)
+                return false;
+
+            if (split[0].Contains('.'))
+                return split[0].IsIpAddress() && split[1].IsInt();
+
+            return split[1].IsInt();
+        }
+        
+        /// <summary>
+        /// Determine if a string is host or throw exception
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="exception">Exception for throwing</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static string IsHostOrThrow(this string source, Exception exception = null)
+        {
+            exception ??= new Exception($"Not a valid host: {source}");
+
+            if (!source.IsHost())
+                throw exception;
+
+            return source;
+        }
+        
         #endregion
     }
 }

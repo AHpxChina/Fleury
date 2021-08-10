@@ -8,10 +8,12 @@ namespace Fleury.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("a".IsInteger());
-            Console.WriteLine("1".IsInteger());
-            Console.WriteLine("22222222222222222222222222222123123123123123123".IsInteger());
-            Console.WriteLine("-222222222222.22222222222222222123123123123123123".IsInteger());
+            Console.WriteLine("127.0.0.1".IsHost());
+            Console.WriteLine("127.0.0.1:2333".IsHost());
+            Console.WriteLine("127.0.0.1:12333".IsHost());
+            Console.WriteLine("1227.0.0.1:12333".IsHost());
+            Console.WriteLine("localhost:12333".IsHost());
+            Console.WriteLine("127.0.0.1:2a333".IsHost());
         }
     }
 }

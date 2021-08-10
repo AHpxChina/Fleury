@@ -4,7 +4,9 @@
     <projectFile>Fleury.Test/Fleury.Test.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c068cdf-9126-4dac-9213-e563be1261e5" name="Default Changelist" comment="Added number checker">
+    <list default="true" id="1c068cdf-9126-4dac-9213-e563be1261e5" name="Default Changelist" comment="Added replacement">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fleury.Test/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury.Test/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fleury/Determine/Text/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury/Determine/Text/StringExtensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +26,8 @@
       <option value="$PROJECT_DIR$/Fleury/Data/Determine/Condition.cs" />
       <option value="$PROJECT_DIR$/Fleury/Determine/ConditionWrapper.cs" />
       <option value="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" />
-      <option value="$PROJECT_DIR$/Fleury.Test/Program.cs" />
       <option value="$PROJECT_DIR$/Fleury/Determine/Text/StringExtensions.cs" />
+      <option value="$PROJECT_DIR$/Fleury.Test/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUXlzM3Hjj99pmFV1zI7dTT9fa" />
@@ -81,7 +83,7 @@
       <workItem from="1628514305576" duration="888000" />
       <workItem from="1628516198384" duration="9392000" />
       <workItem from="1628600912544" duration="5524000" />
-      <workItem from="1628607749885" duration="6736000" />
+      <workItem from="1628607749885" duration="9197000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized">
       <created>1628516228240</created>
@@ -167,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628613042569</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added replacement">
+      <created>1628615021984</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1628615021984</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +209,8 @@
     <MESSAGE value="1.Completely refactor whole solution, forfeit to use chain-based method pattern&#10;2.Added some corresponding unit tests for StringExtensions" />
     <MESSAGE value="Add number checker" />
     <MESSAGE value="Added number checker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added number checker" />
+    <MESSAGE value="Added replacement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added replacement" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
