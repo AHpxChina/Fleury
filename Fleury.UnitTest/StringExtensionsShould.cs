@@ -1,7 +1,6 @@
 using System;
 using System.Runtime.Serialization;
-using Fleury.Determine;
-using Fleury.Determine.Text;
+using Fleury.Extensions.String;
 using Xunit;
 
 namespace Fleury.UnitTest

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Text.Json.Serialization;
-using Fleury.Determine;
-using Fleury.Determine.Text;
+using Fleury.Extensions.String;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -11,18 +10,8 @@ namespace Fleury.Test
     {
         static void Main(string[] args)
         {
-            var json = JsonConvert.SerializeObject(new[]
-            {
-                new
-                {
-                    awd = "awd"
-                }
-            });
-
-            Console.WriteLine(json);
-            Console.WriteLine((json).IsJObject());
-            Console.WriteLine((json).IsJson());
-            Console.WriteLine((json).IsJArray());
+            Console.WriteLine("123456".Empty("123"));
+            Console.WriteLine("a/b/d/c.awad".NormalizePath());
         }
     }
 }

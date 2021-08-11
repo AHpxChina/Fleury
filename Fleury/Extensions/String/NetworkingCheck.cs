@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace Fleury.Determine.Text
+namespace Fleury.Extensions.String
 {
     public static partial class StringExtensions
     {
