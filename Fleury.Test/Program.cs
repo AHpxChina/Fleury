@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 using Fleury.Determine;
 using Fleury.Determine.Text;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Fleury.Test
 {
@@ -8,12 +11,18 @@ namespace Fleury.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("127.0.0.1".IsHost());
-            Console.WriteLine("127.0.0.1:2333".IsHost());
-            Console.WriteLine("127.0.0.1:12333".IsHost());
-            Console.WriteLine("1227.0.0.1:12333".IsHost());
-            Console.WriteLine("localhost:12333".IsHost());
-            Console.WriteLine("127.0.0.1:2a333".IsHost());
+            var json = JsonConvert.SerializeObject(new[]
+            {
+                new
+                {
+                    awd = "awd"
+                }
+            });
+
+            Console.WriteLine(json);
+            Console.WriteLine((json).IsJObject());
+            Console.WriteLine((json).IsJson());
+            Console.WriteLine((json).IsJArray());
         }
     }
 }
