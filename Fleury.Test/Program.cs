@@ -10,8 +10,13 @@ namespace Fleury.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("123456".Empty("123"));
-            Console.WriteLine("a/b/d/c.awad".NormalizePath());
+            Console.WriteLine("11-22-33-44-55-66".SubStringAfterLast("-"));
+            Console.WriteLine("11-22-33-44-55-66".SubStringAfterLast("-", false));
+            Console.WriteLine("11-22-33-44-55-66".SubStringAfterLast("-", 1));
+            Console.WriteLine("11-22-33-44-55-66".SubStringAfterLast("-", 1, false));
+            Console.WriteLine("11-22-33-44-55-66".SubStringAfterLast("-", 2, false));
+            Console.WriteLine("11-22-33-44-55-66".SubStringAfterLast("-", 3, false));
+            Console.WriteLine("11-22-33-44-55-66".SubStringAfterLast("-", 4, false));
         }
     }
 }
