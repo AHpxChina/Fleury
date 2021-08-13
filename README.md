@@ -5,158 +5,158 @@ The design document of Fleury
 ## Data
 
 + Exceptions
-    + String
-        + NoSuchStringException
+  + String
+    + NoSuchStringException
 
 ## Extensions
 
 + String
 
-    + StringExtensions
+  + StringExtensions
 
-        + EmptyCheck
+    + EmptyCheck
 
-            + ```c#
+      + ```c#
         bool IsEmpty(this string source, bool whiteSpace = true)
         ```
 
-            + ```c#
+      + ```c#
         bool IsNotEmpty(this string source, bool whiteSpace = true)
         ```
 
-            + ```c#
+      + ```c#
         string IsEmptyOrThrow(this string source, bool whiteSpace = true, Exception exception = null)
         ```
 
-            + ```c#
+      + ```c#
         string IsNotEmptyOrThrow(this string source, bool whiteSpace = true, Exception exception = null)
         ```
 
-        + JsonCheck
+    + JsonCheck
 
-            + ```c#
+      + ```c#
         bool IsJson(this string source)
         ```
 
-            + ```c#
+      + ```c#
         string IsJsonOrThrow(this string source, Exception exception = null)
         ```
 
-            + ```c#
+      + ```c#
         bool IsJObject(this string source)
         ```
 
-            + ```c#
+      + ```c#
         bool IsJObject(this string source, out JObject output)
         ```
 
-            + ```c#
+      + ```c#
         JObject IsJObjectOrThrow(this string source, Exception exception = null)
         ```
 
-            + ```c#
+      + ```c#
         bool IsJArray(this string source)
         ```
 
-            + ```c#
+      + ```c#
         bool IsJArray(this string source, out JArray output)
         ```
 
-            + ```c#
+      + ```c#
         JArray IsJArrayOrThrow(this string source, Exception exception = null)
         ```
 
-        + NetworkingCheck
+    + NetworkingCheck
 
-            + ```c#
+      + ```c#
         bool IsIpAddress(this string source)
         ```
 
-            + ```c#
+      + ```c#
         bool IsIpAddress(this string source, out IPAddress ipAddress)
         ```
 
-            + ```c#
+      + ```c#
         IPAddress IsIpAddressOrThrow(this string source, Exception exception = null)
         ```
 
-            + ```c#
+      + ```c#
         bool IsHost(this string source)
         ```
 
-            + ```c#
+      + ```c#
         string IsHostOrThrow(this string source, Exception exception = null)
         ```
 
-            + ```c#
+      + ```c#
         bool IsUrl(this string source)
         ```
 
-            + ```c#
+      + ```c#
         string IsUrlOrThrow(this string source, Exception exception = null)
         ```
 
-        + NumberCheck
+    + NumberCheck
 
-            + ```c#
+      + ```c#
         bool IsInt(this string source)
         ```
 
-            + ```c#
+      + ```c#
         bool IsInt(this string source, out int output)
         ```
 
-            + ```c#
+      + ```c#
         int IsIntOrThrow(this string source, Exception exception = null)
         ```
 
-            + ```c#
+      + ```c#
         bool IsLong(this string source)
         ```
 
-            + ```c#
+      + ```c#
         bool IsLong(this string source, out long output)
         ```
 
-            + ```c#
+      + ```c#
         long IsLongOrThrow(this string source, Exception exception = null)
         ```
 
-            + ```c#
+      + ```c#
         bool IsInteger(this string source)
         ```
 
-            + ```c#
+      + ```c#
         string IsIntegerOrThrow(this string source, Exception exception = null)
         ```
 
-        + Replacement
+    + Replacement
 
-            + ```c#
+      + ```c#
         string NormalizePath(this string source, char basicSeparator = '/')
         ```
 
-            + ```c#
+      + ```c#
         string Empty(this string source, string target)
         ```
 
-        + Splitter
+    + Splitter
 
-            + ```c#
+      + ```c#
         string SubStringAfter(this string source, string after, bool include = true)
         ```
 
-            + ```c#
+      + ```c#
         string SubStringAfter(this string source, string after, int count, bool include = true)
         ```
 
-            + ```c#
+      + ```c#
         string SubStringAfterLast(this string source, string after, bool include = true)
         ```
 
-            + ```c#
+      + ```c#
         string SubStringAfterLast(this string source, string after, int count, bool include = true)
         ```
 
-            + 
+      + 
 

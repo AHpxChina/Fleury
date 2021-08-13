@@ -4,20 +4,14 @@
     <projectFile>Fleury.Test/Fleury.Test.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c068cdf-9126-4dac-9213-e563be1261e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fleury/Extensions/Json/JsonExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fleury/Extensions/String/JsonCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury/Extensions/String/JsonCheck.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fleury/Extensions/String/Splitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury/Extensions/String/Splitter.cs" afterDir="false" />
-    </list>
+    <list default="true" id="1c068cdf-9126-4dac-9213-e563be1261e5" name="Default Changelist" comment="Add README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="10008" />
+    <option name="totalTimeSeconds" value="10356" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -57,6 +51,7 @@
       <option value="$PROJECT_DIR$/Fleury/Extensions/Json/JsonExtensions.cs" />
       <option value="$PROJECT_DIR$/Fleury/Extensions/String/JsonCheck.cs" />
       <option value="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUXlzM3Hjj99pmFV1zI7dTT9fa" />
@@ -116,7 +111,7 @@
       <workItem from="1628617902724" duration="1534000" />
       <workItem from="1628653931113" duration="6193000" />
       <workItem from="1628703347059" duration="4112000" />
-      <workItem from="1628862288858" duration="4314000" />
+      <workItem from="1628862288858" duration="4660000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized">
       <created>1628516228240</created>
@@ -237,7 +232,28 @@
       <option name="project" value="LOCAL" />
       <updated>1628692194842</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1.Add JsonExtensions.cs&#10;2.Enhance method structure&#10;3.Add corresponding unit tests">
+      <created>1628866754226</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1628866754226</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add readme">
+      <created>1628866886116</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1628866886116</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add README.md">
+      <created>1628866897956</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1628866897956</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +291,10 @@
     <MESSAGE value="Added Json checkers" />
     <MESSAGE value="Use partial class instead of single huge class" />
     <MESSAGE value="Normalize namespace structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Normalize namespace structure" />
+    <MESSAGE value="1.Add JsonExtensions.cs&#10;2.Enhance method structure&#10;3.Add corresponding unit tests" />
+    <MESSAGE value="Add readme" />
+    <MESSAGE value="Add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
