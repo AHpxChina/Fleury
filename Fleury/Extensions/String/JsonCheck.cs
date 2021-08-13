@@ -50,16 +50,7 @@ namespace Fleury.Extensions.String
         /// <returns></returns>
         public static bool IsJObject(this string source)
         {
-            try
-            {
-                _ = JObject.Parse(source);
-
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            return source.IsJObject(out _);
         }
 
         /// <summary>
@@ -107,16 +98,7 @@ namespace Fleury.Extensions.String
         /// <returns></returns>
         public static bool IsJArray(this string source)
         {
-            try
-            {
-                _ = JArray.Parse(source);
-
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            return source.IsJArray(out _);
         }
 
         /// <summary>

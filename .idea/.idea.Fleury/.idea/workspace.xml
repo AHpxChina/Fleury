@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c068cdf-9126-4dac-9213-e563be1261e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fleury/Data/Exceptions/String/NoSuchStringException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fleury/Extensions/String/Splitter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fleury/Extensions/Json/JsonExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fleury/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fleury.Test/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury.Test/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fleury/Extensions/String/JsonCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury/Extensions/String/JsonCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fleury/Extensions/String/Splitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fleury/Extensions/String/Splitter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="6395" />
+    <option name="totalTimeSeconds" value="10008" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -50,10 +51,12 @@
       <option value="$PROJECT_DIR$/Fleury/Determine/Text/NetworkingCheck.cs" />
       <option value="$PROJECT_DIR$/Fleury/Determine/Text/StringExtensions.cs" />
       <option value="$PROJECT_DIR$/Fleury/Determine/Text/JsonCheck.cs" />
-      <option value="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" />
       <option value="$PROJECT_DIR$/Fleury/Data/Exceptions/String/NoSuchStringException.cs" />
-      <option value="$PROJECT_DIR$/Fleury/Extensions/String/Splitter.cs" />
       <option value="$PROJECT_DIR$/Fleury.Test/Program.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Extensions/String/Splitter.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Extensions/Json/JsonExtensions.cs" />
+      <option value="$PROJECT_DIR$/Fleury/Extensions/String/JsonCheck.cs" />
+      <option value="$PROJECT_DIR$/Fleury.UnitTest/StringExtensionsShould.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1wUXlzM3Hjj99pmFV1zI7dTT9fa" />
@@ -78,7 +81,7 @@
     <property name="settings.editor.selected.configurable" value="RiderCSharpLiveTemplatesSettingsId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Fleury.Test">
     <configuration name="Fleury.Test" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -113,6 +116,7 @@
       <workItem from="1628617902724" duration="1534000" />
       <workItem from="1628653931113" duration="6193000" />
       <workItem from="1628703347059" duration="4112000" />
+      <workItem from="1628862288858" duration="4314000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized">
       <created>1628516228240</created>

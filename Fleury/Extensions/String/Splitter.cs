@@ -88,5 +88,16 @@ namespace Fleury.Extensions.String
                 ? source.Substring(index, count)
                 : source.Substring(index + 1, count);
         }
+
+        public static string SubStringBefore(this string source, string before, bool include = true)
+        {
+            if (!source.Contains(before))
+                throw new NoSuchStringException($"Target: {before}");
+
+            var re = source[..source.IndexOf(before, StringComparison.Ordinal)];
+            return include
+                ? re
+                : re.Empty(before);
+        }
     }
 }
